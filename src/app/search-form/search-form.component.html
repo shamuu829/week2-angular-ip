@@ -1,0 +1,8 @@
+<form (ngSubmit)="searchFor(searchForm)" #searchForm="ngForm">
+  <div class="form-group">
+    <input type="text" class="form-control" name="find" placeholder="ENTER USERNAME"[(ngModel)]="searchInfo.find" #find="ngModel">
+    <button type="submit" class="btn btn-group">search</button>
+
+  </div>
+
+</form>

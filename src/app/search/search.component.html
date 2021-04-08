@@ -1,0 +1,41 @@
+<div class="container">
+  
+  <div class="row">
+    <div class="col-md-13">
+      <app-search-form (getName)='findUser($event)'></app-search-form>
+
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-md-7">
+      <div class="table table-striped table-light">
+        <h3>{{users.name}}</h3>
+        <table class="table table-striped table-light">
+          <tbody>
+            <tr>
+              <th scope="row">GITHUB USERNAME</th>
+              <td><a href="{{users.html_url}}" target="_blank">{{users.login}}</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Repositories</th>
+              <td>users.public_repos</td>
+            </tr>
+            <tr>
+              <th scope="row">date created:</th>
+              <td>{{users.created_at | date}}</td>
+
+
+
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>

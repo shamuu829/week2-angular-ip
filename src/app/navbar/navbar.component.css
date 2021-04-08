@@ -1,0 +1,16 @@
+.navbar-red a {
+  display: block;
+  text-align: center;
+  color: black;
+  padding: 10px 15px;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+* {box-sizing: border-box;}
+
+.navbar-red {
+  background-color: brown;
+}
